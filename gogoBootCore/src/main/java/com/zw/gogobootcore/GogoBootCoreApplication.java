@@ -1,13 +1,13 @@
-package com.zw.gogoboot;
+package com.zw.gogobootcore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GogoBootApplication {
+public class GogoBootCoreApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GogoBootApplication.class, args);
+        SpringApplication.run(GogoBootCoreApplication.class, args);
     }
- 
+
 }

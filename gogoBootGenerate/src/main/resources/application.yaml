@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gogoBootGenerate
+  datasource:
+    druid:
+      url: jdbc:mysql://101.37.169.168:3306/gogo?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+      username: root
+      password: 5171204awei
+      driver-class-name: com.mysql.cj.jdbc.Driver

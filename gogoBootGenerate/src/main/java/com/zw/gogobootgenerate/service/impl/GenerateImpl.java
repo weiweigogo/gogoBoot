@@ -1,10 +1,17 @@
 package com.zw.gogobootgenerate.service.impl;
 
+import com.zw.gogobootgenerate.mapper.GenerateMapper;
 import com.zw.gogobootgenerate.service.Generate;
+import jakarta.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class GenerateImpl implements Generate {
+
+    @Resource
+    private GenerateMapper generateMapper;
 
     @Override
     public String generateTable(String tableName) {
@@ -19,7 +26,6 @@ public class GenerateImpl implements Generate {
 
     @Override
     public List<String> getDatabaseName() {
-
-        return List.of();
+        return generateMapper.getDatabaseName();
     }
 }

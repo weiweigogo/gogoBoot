@@ -7,3 +7,5 @@ spring:
       username: root
       password: 5171204awei
       driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8558

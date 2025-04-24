@@ -2,7 +2,9 @@ package com.zw.gogobootgenerate.controller;
 
 import com.zw.gogobootcore.context.Result;
 import com.zw.gogobootgenerate.entity.Table;
+import com.zw.gogobootgenerate.service.Generate;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,9 @@ import java.util.List;
 @RequestMapping("/tableController")
 @Slf4j
 public class tableController {
+
+    @Autowired
+    private Generate generate;
 
     @GetMapping("/list")
     public Result<List<Table>> getList(Table table){
@@ -31,6 +36,12 @@ public class tableController {
     @PostMapping("/update")
     public Result<String> updateTable(Table table){
         return Result.OK("修改成功");
+    }
+
+
+    @GetMapping("/getDatabase")
+    public Result<List<String>> getDatabase(){
+        return Result.OK(generate.getDatabaseName());
     }
 
 

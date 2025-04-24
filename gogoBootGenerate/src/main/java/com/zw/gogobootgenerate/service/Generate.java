@@ -16,4 +16,12 @@ public interface Generate {
      * @return
      */
     public List<String> getDatabaseName();
+
+
+    /**
+     * 获取表名
+     * @return
+     */
+    public List<String> getTableName();
+
 }

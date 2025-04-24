@@ -16,8 +16,6 @@ public class Result<T> {
 
     private T data;
 
-    public Result() {
-    }
 
     public static <T> Result<T> OK(T data) {
         return Result.<T>builder()

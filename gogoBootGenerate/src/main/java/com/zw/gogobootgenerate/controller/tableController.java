@@ -33,7 +33,5 @@ public class tableController {
         return Result.OK("修改成功");
     }
 
-    
-
 
 }

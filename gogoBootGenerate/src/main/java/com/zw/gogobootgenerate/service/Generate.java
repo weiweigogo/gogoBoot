@@ -1,6 +1,8 @@
 package com.zw.gogobootgenerate.service;
 
-public interface generate {
+import java.util.List;
+
+public interface Generate {
 
     /**
      * 根据表名生成
@@ -8,4 +10,10 @@ public interface generate {
      * @return
      */
     public String generateTable(String tableName);
+
+    /**
+     * 获取数据库名
+     * @return
+     */
+    public List<String> getDatabaseName();
 }

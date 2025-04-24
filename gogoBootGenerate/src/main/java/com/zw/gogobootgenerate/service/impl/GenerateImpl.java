@@ -1,8 +1,10 @@
 package com.zw.gogobootgenerate.service.impl;
 
-import com.zw.gogobootgenerate.service.generate;
+import com.zw.gogobootgenerate.service.Generate;
 
-public class generateImpl implements generate {
+import java.util.List;
+
+public class GenerateImpl implements Generate {
 
     @Override
     public String generateTable(String tableName) {
@@ -11,7 +13,13 @@ public class generateImpl implements generate {
 
         //根据表中结构生成内容
 
-
         return "";
+    }
+
+
+    @Override
+    public List<String> getDatabaseName() {
+
+        return List.of();
     }
 }
